@@ -4,15 +4,22 @@ Zendesk Ticket Vieweris a customer service tool that allows the creation and man
 
 ## Installation:
 
-Download Python3
-
+1. Install Homebrew
+	> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+2. Install python3
+	> brew install python3
+3. Install pip
+	> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+	> python3 get-pip.py
+4. Install requests package
+	> python3 -m pip install requests
+	
 ## Usage:
 
 1. Open terminal and go to the location of the files.
 
 2. Run TicketViewer.py on the terminal
-
-    > python3 TicketViewer.py
+	> python3 TicketViewer.py
     
 3.  TicketViewer.py will displays the following menu items:
 
