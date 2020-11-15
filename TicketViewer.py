@@ -1,7 +1,7 @@
 import requests
 import textwrap
 
-auth = 'sangalderyk@gmail.com', 'deryk912'
+auth = 'sangalderyk@gmail.com', 'deryk123'
 GLOBALURL = 'https://sangalgroup.zendesk.com/api/v2/tickets'
 
 def getData(url, user_input):
