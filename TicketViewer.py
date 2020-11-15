@@ -78,10 +78,11 @@ def printOneTicket():
     url = GLOBALURL + '/{}.json?include=users'.format(user_ticketID_input)
     data = getData(url, 2)
     description_without_breaks = data['ticket']['description'].replace('\n',' ')
-    print('ID #{}   Type: {}    Subject: {}.    Created at: {}'.format(f'{data["ticket"]["id"] : <{3}}', data["ticket"]["type"],f'{data["ticket"]["subject"] : <{20}}',f'{data["ticket"]["created_at"] : <{20}}'))
+    print('ID #{} | Type: {} | Subject: {}. | Created at: {} | Status: {} | Priority: {}'.format(f'{data["ticket"]["id"] : <{3}}', data["ticket"]["type"],f'{data["ticket"]["subject"] : <{20}}',f'{data["ticket"]["created_at"] : <{20}}', data["ticket"]["status"], data["ticket"]["priority"]))
+    print('')
     print('Description: {}'. format(description_without_breaks))
-    print('Requested by: {}, Name: {}'.format(data['ticket']['requester_id'], data['users'][0]['name']))
-    print('Status: {}    Priority: {}'.format(data["ticket"]["status"], data["ticket"]["priority"]))
+    print('')
+    print('Requested by: {} | Name: {}'.format(data['ticket']['requester_id'], data['users'][0]['name']))
     print('')
     
 def programQuit():
