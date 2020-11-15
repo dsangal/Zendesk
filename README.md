@@ -1,6 +1,13 @@
-# Zendesk coding challenge
+# Zendesk Ticket Viewer - CLI
 
-Zendesk Ticket Vieweris a customer service tool that allows the creation and management of support tickets.
+Zendesk Ticket Viewer is a customer service tool that allows the creation and management of support tickets. The applicaiton will covers following usercase
+
+	● Connect to the Zendesk API
+	● Request all the tickets for your account
+	● Display them in a list
+	● Display individual ticket details
+	● Page through tickets when more than 25 are returned
+
 
 ## Installation:
 
