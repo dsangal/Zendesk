@@ -2,11 +2,11 @@
 
 Zendesk Ticket Vieweris a customer service tool that allows the creation and management of support tickets.
 
-##Installation:
+## Installation:
 
 Download Python3
 
-##Usage:
+## Usage:
 
 1.  Execute Python3 TicketViewer.py.
 
